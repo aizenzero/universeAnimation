@@ -1,0 +1,613 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+
+}
+body{
+    background-color: rgb(48, 155, 155);
+    background-image: url("./image/1.jpg");
+    background-position: center;
+    background-size:cover;
+}
+
+.banner{
+    background-color: rgb(61, 2, 2);
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+
+.banner h1{
+   
+    padding: 15px;
+    text-align: center;
+    color: red;
+}
+
+.banner-links{
+    text-decoration: none;
+    color: white;
+    display: inline-flex;
+    gap: 50px;
+    list-style: none;
+   
+}
+
+/* unvisited link */
+a:link {
+  color: red;
+  text-decoration: none;
+  padding: 5px;
+}
+
+/* visited link */
+a:visited {
+  color: rgb(255, 255, 255);
+  padding: 5px;
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(10, 10, 10);
+  border-radius: 2px;
+  padding: 5px;
+  background-color: yellow;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+  padding: 5px;
+  border-radius: 2px;
+  background-color: yellow;
+}
+
+
+
+/* -------------------text------------------------- */
+
+.text{
+  width: 300px;
+  color: white;
+  position: absolute;
+  font-size: 4px;
+  font-style: italic;
+  margin-top: 120px;
+  margin-left: 1000px;
+  text-align: center;
+}
+
+
+
+
+.circle{
+  margin-top: -350px;
+}
+
+
+
+
+.center{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    
+    margin-top: 100px;
+    margin-left: 630px;
+    background-color: rgb(43, 30, 218);
+    align-items: center;
+    text-align: center;
+    animation-name: center;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+   
+   
+}
+
+@keyframes center {
+    0%   {background-color:rgb(243, 247, 8)}
+    25%  {background-color:rgb(0, 0, 0);}
+    50%  {background-color:rgb(0, 109, 160); }
+    75%  {background-color:rgb(247, 5, 5); }
+    100% {background-color:rgb(204, 1, 211); }
+  }
+
+
+/* --------------------------------------------------------- */
+
+
+.img1{
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  margin-top: 100px;
+  border-radius: 20px;
+  background-image: url("./image/3.jpg");
+  background-position: center;
+  background-color: red;
+
+  
+}
+
+.img2{
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  border-radius: 20px;
+  margin-top: 200px;
+  background-image: url("./image/4.jpg");
+  background-position: center;
+}
+
+.img3 {
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  border-radius: 20px;
+  margin-top: 300px;
+  background-image: url("./image/5.jpg");
+  background-position: center;
+}
+
+/* ---------------------------------------- */
+
+
+
+
+.img1{
+  width: 300px;
+  animation: rotation 6s infinite linear;
+ 
+}
+  
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+    height: 200px;
+    width: 200PX;
+   
+  }
+  to {
+    transform: rotate(360deg);
+    height: 50px;
+    width: 50PX;
+    
+  }
+}
+
+
+
+/* --------------------- */
+
+.img2{
+  width: 300px;
+  animation: rotation 6s infinite linear;
+ 
+}
+  
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+    height: 200px;
+    width: 200PX;
+   
+  }
+  to {
+    transform: rotate(360deg);
+    height: 50px;
+    width: 50PX;
+    
+  }
+}
+
+/* --------------------- */
+
+.img3{
+  width: 300px;
+  animation: rotation 6s infinite linear;
+ 
+}
+  
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+    height: 200px;
+    width: 200PX;
+   
+  }
+  to {
+    transform: rotate(360deg);
+    height: 50px;
+    width: 50PX;
+    
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------- */
+
+
+.box1{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* margin: 0 auto; */
+    margin:0 auto;
+    margin-top: 100px;
+    background-color: red;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    animation-name: example1;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+   
+   
+}
+
+@keyframes example1 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:208px; top:130px;}
+    50%  {background-color:blue; left:0px; top:250px;}
+    75%  {background-color:green; left:-210px; top:130px;}
+    100% {background-color:red; left:0px; top:0px;}
+    
+  }
+
+
+/* --------------------------------------------------------- */
+
+
+.box2{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-left: 550px;
+    margin-top: 10px;
+    background-color: red;
+    align-items: center;
+    text-align:center;
+    position: relative;
+    animation-name: example2;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+   
+   
+}
+
+@keyframes example2 {
+    0%   {background-color:red; left:0px; top:0px;}
+    20%  {background-color:yellow; left:110px; top:-60px;}
+    40%  {background-color:blue; left:320px; top:70px;}
+    60%  {background-color:green; left:100px; top:190px;}
+    80% {background-color:red; left:-100px; top:70px;}
+    100% {background-color:rgb(12, 126, 134); left:0px; top:0px;}
+  }
+
+/* --------------------------------------------------------- */
+
+
+.box3{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 450px;
+    background-color: red;
+    text-align:center;
+    position: relative;
+    animation-name: example3;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+   
+   
+}
+
+@keyframes example3 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:210px; top:-130px;}
+    50%  {background-color:blue; left:420px; top:0px;}
+    75%  {background-color:green; left:210px; top:120px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
+
+/* --------------------------------------------------------- */
+
+
+.box4{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 550px;
+    background-color: red;
+    text-align:center;
+    position: relative;
+    animation-name: example4;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+   
+   
+}
+
+@keyframes example4 {
+    0%   {background-color:red; left:0px; top:0px;}
+    20%  {background-color:yellow; left:-100px; top:-70px;}
+    40%  {background-color:blue; left:110px; top:-200px;}
+    60%  {background-color:green; left:320px; top:-70px;}
+    80% {background-color:red; left:110px; top:50px;}
+    100% {background-color:rgb(0, 225, 255); left:0px; top:0px;}
+}
+
+
+
+/* --------------------------------------------------------- */
+
+
+.box5{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: px;
+   
+    background-color: rgb(252, 0, 0);
+    text-align:center;
+    position: relative;
+    animation-name: example5;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+   
+   
+}
+
+@keyframes example5 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:-208px; top:-130px;}
+    50%  {background-color:blue; left:0px; top:-250px;}
+    75%  {background-color:green; left:210px; top:-130px;}
+    100% {background-color:red; left:0px; top:0px;}
+    
+  }
+
+
+
+/* --------------------------------------------------------- */
+
+
+
+.box6{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: -100px;
+    margin-right: 550px;
+    background-color: rgb(252, 0, 0);
+    text-align:center;
+    position: relative;
+    animation-name: example6;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+   
+   
+}
+
+@keyframes example6 {
+    0%   {background-color:red; left:0px; top:0px;}
+    20%  {background-color:yellow; left:-110px; top:50px;}
+    40%  {background-color:blue; left:-320px; top:-70px;}
+    60%  {background-color:green; left:-100px; top:-200px;}
+    80% {background-color:red; left:100px; top:-75px;}
+    100% {background-color:rgb(0, 225, 255); left:0px; top:0px;}
+  }
+
+
+
+
+
+/* --------------------------------------------------------- */
+
+
+
+.box7{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: -120px;
+    margin-right: 450px;
+    background-color: red;
+    text-align:center;
+    position: relative;
+    animation-name: example7;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+   
+   
+}
+
+@keyframes example7 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:-210px; top:120px;}
+    50%  {background-color:blue; left:-420px; top:0px;}
+    75%  {background-color:green; left:-210px; top:-130px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
+
+/* --------------------------------*/
+
+
+
+
+.box8{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: -120px;
+    margin-right: 550px;
+    background-color: rgb(252, 0, 0);
+    text-align:center;
+    position: relative;
+    animation-name: example8;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+   
+   
+}
+
+@keyframes example8 {
+    0%   {background-color:red; left:0px; top:0px;}
+    20%  {background-color:yellow; left:100px; top:70px;}
+    40%  {background-color:blue; left:-110px; top:190px;}
+    60%  {background-color:green; left:-320px; top:70px;}
+    80% {background-color:red; left:-110px; top:-60px;}
+    100% {background-color:rgb(12, 126, 134); left:0px; top:0px;}
+  }
+
+
+/* --------------------------------------------------------- */
+
+
+
+.second-container{
+    margin-top: 200px;
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    
+    /* background-color: rgb(252, 249, 249); */
+}
+
+.second-container h1 {
+    color: white;
+    margin-bottom: 20px;
+   
+}
+
+.second-container h3{
+  color: rgb(240, 7, 7);
+}
+
+@keyframes fadeIn { 
+  from { opacity: 0; } 
+}
+
+.clicktostart {
+    animation: fadeIn 1s infinite alternate;
+}
+
+/* ---------------- */
+
+body {
+  background:black url(http://fc01.deviantart.net/fs71/f/2012/160/b/9/stars_by_paulinemoss-d52un4e.jpg);
+  animation: stars 205s linear alternate;
+}
+
+#box {
+  /* background:url(https://cdn.rawgit.com/ManzDev/cursos-assets/gh-pages/css3/earth-2.jpg); */
+  background-size:cover;
+  border:2px solid #000;
+  border-radius:50%;
+  width:200px;
+  height:200px;
+  animation: movimiento 5s linear 0s infinite;
+  box-shadow:0 0 25px RGBA(255,255,255, 0.10),
+             -8px -8px 15px #000 inset,
+             2px 2px 25px #000 inset,
+             -45px -45px 25px RGBA(0,0,0, 0.5) inset, 
+             25px 25px 45px RGBA(0,0,0, 0.45) inset;
+  margin:6em auto;
+  transform:rotateX(6deg) rotateY(6deg) rotateZ(6deg);
+}
+
+@keyframes movimiento {
+  0% { background-position:0 0 }
+  100% { background-position:355px 0 }
+}
+
+@keyframes stars {
+  0% { background-position:0 0 }
+  100% { background-position:0 100% }
+}
+
+/* -------------------------- */
+
+.ml11 {
+  font-weight: 700;
+  font-size: 3.5em;
+}
+
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #fff;
+  transform-origin: 0 50%;
+}
+
+.ml11 .line1 { 
+  top: 0; 
+  left: 0;
+}
+
+.ml11 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
